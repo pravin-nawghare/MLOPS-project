@@ -1,0 +1,19 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+ipykernel
+flask
+mlflow==2.17
+dvc
+
+pytest==8.3.0
+tox==4.20.0
+black==22.8
+flake8==5.0.4
+mypy==0.971
+
+-e .
+
+#https://github.com/sunnysavita10/Gemstone-Price-Prediction-End-to-End-Pipeline -> repo link
