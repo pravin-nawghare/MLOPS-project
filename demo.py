@@ -1,4 +1,4 @@
-from src.components.data_ingestion import DataIngestion
+from src.pipeline.training_pipeline import run_pipeline
 
-obj = DataIngestion()
-obj.initiate_data_ingestion()
+obj = run_pipeline()
+#obj.initiate_data_ingestion()

@@ -40,8 +40,25 @@ def load_object(file_path):
         logging.info("Exception occurred while loading object in load_object function in utils.py file")
         raise CustomeException(e,sys)
 
-def evaluate_metrics(true, predict):
-    r2 = r2_score(true, predict)
-    mae = mean_absolute_error(true, predict)
-    rmse = np.sqrt(mean_squared_error(true, predict))
+def evaluate_model(X_train, y_train, X_test, y_test, models):
+    try:
+        report = {}
+        for i in range(len(models)):
+            model = list(models.values())[i]
+            # Train model
+            model.fit(X_train, y_train)
+
+            # Predict testing data
+            y_test_pred = model.predict(X_test)
+
+            # get r2_score for train and test data
+            test_model_score = r2_score(y_test, y_test_pred)
+
+            report[list(models.keys())[i]] = test_model_score
+
+        return report
+
+    except Exception as e:
+        logging.info("Error occured while running evaluate_model from utils.py file")
+        raise CustomeException(e,sys) 
     
