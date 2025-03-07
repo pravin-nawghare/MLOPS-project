@@ -7,8 +7,6 @@ import pandas as pd
 from src.components.data_ingestion import DataIngestion
 from src.components.data_transformation import DataTransformation
 from src.components.model_trainer import ModelTrainer
-from src.components.model_evaluation import ModelEvaluation
-from src.logger.logging import logging
 
 def run_pipeline():
     obj = DataIngestion()
@@ -19,5 +17,3 @@ def run_pipeline():
 
     model_trainer = ModelTrainer()
     model_trainer_obj = model_trainer.initiate_model_trainer(train_arr, test_arr)
-# path = os.path.join(os.getcwd(), 'src', 'pipeline')
-# print(path)
