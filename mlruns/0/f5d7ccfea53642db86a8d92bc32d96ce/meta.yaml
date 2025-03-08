@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Data-Sorting/MLOPS-project/mlruns/0/f5d7ccfea53642db86a8d92bc32d96ce/artifacts
+end_time: 1741434599027
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f5d7ccfea53642db86a8d92bc32d96ce
+run_name: luminous-newt-134
+run_uuid: f5d7ccfea53642db86a8d92bc32d96ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741434588153
+status: 3
+tags: []
+user_id: prave
